@@ -14,7 +14,7 @@ class DisplayTime extends React.Component {
     componentDidMount() {
         this.intervalID = setInterval(
             () => this.tick(),
-            1000
+            500
         );
     }
 
