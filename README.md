@@ -1,3 +1,9 @@
+# Description
+In here you will find most of my work related to React.js. Most likely will end up as a collection of various standalone apps.
+
+
+--- 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
