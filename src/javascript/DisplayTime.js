@@ -1,11 +1,13 @@
 import React from 'react';
 import '../css/DisplayTime.css';
 
+let options = { dateStyle: 'long', timeStyle: 'medium' };
 class DisplayTime extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
-            time: new Date().toLocaleString("en-GB")
+            time: new Date().toLocaleString('en-GB', options)
         };
     }
 
@@ -22,14 +24,14 @@ class DisplayTime extends React.Component {
 
     tick() {
         this.setState({
-            time: new Date().toLocaleString()
+            time: new Date().toLocaleString('en-GB', options)
         });
     }
 
     render() {
         return (
             <div className="DisplayTime">
-                <div>{this.state.time}</div>
+                <div>{this.state.time} {Intl.DateTimeFormat().resolvedOptions().timeZone}</div>
             </div>
         );
     }
